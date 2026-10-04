@@ -1,0 +1,16 @@
+{
+  "name": "campaign-forge",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Batch DTR (dynamic text replacement) parsing library with persistent template revisions",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test \"dist/test/*.test.js\""
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.5.0"
+  }
+}
