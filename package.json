@@ -1,0 +1,17 @@
+{
+  "name": "rtos-admission-analysis",
+  "version": "0.1.0",
+  "private": true,
+  "description": "RTOS 任务配置准入分析库：单核固定优先级完全抢占周期任务的可调度性判定",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test \"dist/test/*.test.js\""
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "typescript": "^5.9.3"
+  }
+}
