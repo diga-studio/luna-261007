@@ -1,0 +1,15 @@
+{
+  "name": "quantlens-correlation",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "QuantLens in-process numeric library: correlation matrix estimation and repair",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test \"dist/test/*.test.js\""
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "typescript": "^5.6.0"
+  }
+}
