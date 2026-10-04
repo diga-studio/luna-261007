@@ -1,0 +1,16 @@
+{
+  "name": "body-signature-detector",
+  "version": "0.1.0",
+  "private": true,
+  "description": "In-memory streaming request-body signature detection library for WAF integration",
+  "type": "module",
+  "main": "dist/src/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "tsc -p tsconfig.json && node --test \"dist/test/*.test.js\""
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.5.0"
+  }
+}
