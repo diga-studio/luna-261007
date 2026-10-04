@@ -1,0 +1,13 @@
+{
+  "name": "apr-candidates",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Exact APR candidate computation for revolving credit disclosure checks",
+  "scripts": {
+    "build": "tsc",
+    "test": "tsc && node --test"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0"
+  }
+}
