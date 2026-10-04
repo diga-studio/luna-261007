@@ -1,0 +1,21 @@
+{
+  "name": "cms-graphql-reader",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Read-only CMS public content GraphQL reader backed by SQLite",
+  "main": "dist/src/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "tsc -p tsconfig.json && node --test \"dist/test/*.test.js\""
+  },
+  "dependencies": {
+    "graphql": "^16.8.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.0",
+    "typescript": "^5.5.0"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  }
+}
