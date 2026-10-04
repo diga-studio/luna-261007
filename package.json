@@ -1,0 +1,17 @@
+{
+  "name": "deploy-failure-alerts",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Deployment failure alerting component for terminal management platforms",
+  "engines": {
+    "node": ">=21"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "tsc -p tsconfig.json && node --test \"dist/tests/*.test.js\""
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.5.0"
+  }
+}
