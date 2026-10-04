@@ -1,0 +1,16 @@
+{
+  "name": "vpn-failover",
+  "version": "0.1.0",
+  "private": true,
+  "description": "In-process primary/backup VPN tunnel failover coordination library",
+  "type": "module",
+  "main": "dist/src/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test dist/test/*.test.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0",
+    "@types/node": "^24.0.0"
+  }
+}
