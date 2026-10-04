@@ -1,0 +1,14 @@
+{
+  "name": "vaultmint-ledger",
+  "version": "1.0.0",
+  "private": true,
+  "description": "VaultMint fractional-cent valuation ledger for a single tokenized asset",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test \"dist/test/*.test.js\""
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0"
+  }
+}
