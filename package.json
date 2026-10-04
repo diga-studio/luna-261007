@@ -1,0 +1,17 @@
+{
+  "name": "matching-engine",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Single-pair in-memory limit/market/stop-limit matching engine",
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "pretest": "npm run build",
+    "test": "node --test \"dist/test/*.test.js\""
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0"
+  }
+}
