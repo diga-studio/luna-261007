@@ -1,0 +1,16 @@
+{
+  "name": "snapshot-repo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Maven SNAPSHOT 本地发布库：SQLite 元数据 + 本地目录制品",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && tsc -p tsconfig.test.json && node --test \"dist-test/test/*.test.js\""
+  },
+  "devDependencies": {
+    "typescript": "5.9.3",
+    "@types/node": "24.12.4"
+  }
+}
