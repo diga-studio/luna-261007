@@ -1,0 +1,19 @@
+{
+  "name": "terrasight-mvt",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Offline area-feature tile encoder (MVT 2.1) for TerraSight",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "node --test",
+    "check": "tsc -p tsconfig.test.json"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.0",
+    "@types/node": "^24.0.0"
+  }
+}
