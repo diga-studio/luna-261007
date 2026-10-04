@@ -1,0 +1,14 @@
+{
+  "name": "spherical-geofence-matcher",
+  "version": "0.1.0",
+  "description": "In-memory spherical geofence matching library for location-based marketing",
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc --noEmit",
+    "test": "node --test 'test/*.test.ts'"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
