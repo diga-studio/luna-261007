@@ -1,0 +1,17 @@
+{
+  "name": "session-reassembly",
+  "version": "0.1.0",
+  "private": true,
+  "description": "In-memory session reassembly for mobile behavior events",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test dist-test/test/*.test.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "@types/node": "^22.0.0"
+  },
+  "main": "dist-test/src/index.js",
+  "types": "dist-test/src/index.d.ts"
+}
