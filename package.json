@@ -1,0 +1,14 @@
+{
+  "name": "workflow-engine",
+  "version": "0.1.0",
+  "private": true,
+  "description": "In-memory conditional-branch and loop workflow execution library",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "tsc -p tsconfig.json && node --test \"dist/test/*.test.js\""
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0"
+  }
+}
