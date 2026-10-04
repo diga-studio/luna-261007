@@ -1,0 +1,21 @@
+{
+  "name": "graphql-namespace-delegation",
+  "version": "0.1.0",
+  "private": true,
+  "description": "In-memory GraphQL namespace delegation library",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "build:test": "tsc -p tsconfig.test.json",
+    "test": "npm run build && npm run build:test && node --test \"dist-test/**/*.test.js\""
+  },
+  "dependencies": {
+    "graphql": "https://cdn.npmmirror.com/packages/graphql/16.13.2/graphql-16.13.2.tgz"
+  },
+  "devDependencies": {
+    "typescript": "https://cdn.npmmirror.com/packages/typescript/5.9.3/typescript-5.9.3.tgz",
+    "@types/node": "https://cdn.npmmirror.com/packages/%40types/node/26.6.4/node-26.6.4.tgz"
+  },
+  "type": "module"
+}
