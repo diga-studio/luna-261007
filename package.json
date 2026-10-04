@@ -1,0 +1,19 @@
+{
+  "name": "clinic-slot-allocator",
+  "version": "0.1.0",
+  "description": "In-memory continuous slot allocation library for outpatient scheduling",
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "node --experimental-strip-types --test test/*.test.ts",
+    "stress": "node --experimental-strip-types stress/stress.ts"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0"
+  },
+  "engines": {
+    "node": ">=22.6.0"
+  }
+}
