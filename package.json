@@ -1,0 +1,15 @@
+{
+  "name": "apr-candidates",
+  "version": "1.0.0",
+  "description": "Exact APR candidate computation for revolving credit disclosure verification",
+  "type": "module",
+  "main": "dist/src/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test \"dist/test/*.test.js\""
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0"
+  },
+  "types": "dist/src/index.d.ts"
+}
