@@ -1,0 +1,21 @@
+{
+  "name": "edge-inference-latency",
+  "version": "1.0.0",
+  "description": "Edge inference latency analysis library: import local metric files into read-only datasets and query exact latency statistics.",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=22.6.0"
+  },
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "test": "node --experimental-strip-types --test",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.6.0"
+  }
+}
