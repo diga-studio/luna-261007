@@ -1,0 +1,16 @@
+{
+  "name": "funnel-merge-stats",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Incremental per-channel daily funnel stats over merged lead groups",
+  "type": "module",
+  "main": "dist/src/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "tsc -p tsconfig.json && node --test \"dist/test/*.test.js\""
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "typescript": "^5.6.0"
+  }
+}
