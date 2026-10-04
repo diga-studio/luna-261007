@@ -1,0 +1,16 @@
+{
+  "name": "nurse-staffing-advisor",
+  "version": "0.1.0",
+  "private": true,
+  "description": "医疗资源调配建议库：在护士总量不变的前提下给出达标的科室配置建议",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "node --test \"test/**/*.test.ts\""
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0"
+  }
+}
