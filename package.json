@@ -1,0 +1,18 @@
+{
+  "name": "snapshot-repo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local Maven SNAPSHOT release repository with SQLite metadata and crash-safe commits",
+  "type": "module",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && NODE_OPTIONS=--expose-gc node --test 'dist/test/*.test.js'"
+  },
+  "devDependencies": {
+    "@types/node": "^26.0.0",
+    "typescript": "^5.9.0"
+  }
+}
