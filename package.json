@@ -1,0 +1,15 @@
+{
+  "name": "sentinel-core",
+  "version": "0.1.0",
+  "private": true,
+  "description": "SentinelCore local file quarantine executor",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "tsc -p tsconfig.test.json && node --test \"dist-test/test/**/*.test.js\""
+  },
+  "devDependencies": {
+    "typescript": "5.9.3",
+    "@types/node": "22.19.21"
+  }
+}
