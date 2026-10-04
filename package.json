@@ -1,0 +1,17 @@
+{
+  "name": "exit-waterfall",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Exact in-process equity exit waterfall (liquidation) calculator",
+  "type": "module",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "tsc -p tsconfig.json && node --test dist/test/*.test.js"
+  },
+  "devDependencies": {
+    "@types/node": "^22.19.21",
+    "typescript": "^5.9.3"
+  }
+}
