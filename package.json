@@ -1,0 +1,15 @@
+{
+  "name": "archive-notifier",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Reliable delivery and acknowledgement library for archive compliance notifications, persisted in SQLite.",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test dist/test/*.test.js"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.0",
+    "typescript": "5.9.3"
+  }
+}
