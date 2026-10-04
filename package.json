@@ -1,0 +1,13 @@
+{
+  "name": "random-walk-signal",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Random-access, shardable Gaussian random-walk signal library",
+  "scripts": {
+    "build": "tsc",
+    "test": "tsc && node --test \"dist/test/*.test.js\""
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0"
+  }
+}
