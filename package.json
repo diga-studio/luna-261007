@@ -1,0 +1,18 @@
+{
+  "name": "random-walk-signal",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Random-access, lazily splittable Gaussian random-walk signal over a fixed 1ms grid",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "npm run build && node --test"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0"
+  }
+}
