@@ -1,0 +1,18 @@
+{
+  "name": "shift-cover-invitations",
+  "version": "0.1.0",
+  "private": true,
+  "description": "代班邀约库：由上层排班系统调用，业务状态持久化到 SQLite",
+  "type": "commonjs",
+  "main": "dist/src/index.js",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test \"dist/test/**/*.test.js\""
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0"
+  }
+}
