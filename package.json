@@ -1,0 +1,15 @@
+{
+  "name": "shift-cover-invites",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "代班邀约库：候选查询、发起/接受/拒绝/取消邀约，状态持久化于 SQLite",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "node --test test/*.test.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "typescript": "^5.9.3"
+  }
+}
