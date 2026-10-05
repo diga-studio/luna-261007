@@ -1,0 +1,14 @@
+{
+  "name": "secure-vault",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "In-process limited-view streaming gate (SecureVault)",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "tsc -p tsconfig.json && node --test \"dist/test/*.test.js\""
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0"
+  }
+}

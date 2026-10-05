@@ -1,0 +1,29 @@
+/** 查看授权。字段为 null 表示该项不限。 */
+export interface Grant {
+  /** 毫秒时间戳，当前时间达到它即失效；null 表示不限。 */
+  expiresAt: number | null;
+  /** 最大查看次数；null 表示不限。 */
+  maxViews: number | null;
+}
+
+/** 可注入时钟，返回当前毫秒时间戳。 */
+export type Clock = () => number;
+
+/**
+ * 内容源：按 documentId 打开异步字节流，产生明文字节。
+ * 每块不超过 64 KiB。
+ */
+export interface ContentSource {
+  open(documentId: string): AsyncIterable<Uint8Array> | Promise<AsyncIterable<Uint8Array>>;
+}
+
+export interface SecureVaultOptions {
+  /** 内容源。 */
+  source: ContentSource;
+  /** 时钟，默认 Date.now。 */
+  clock?: Clock;
+  /** 令牌有效期（毫秒），默认 60_000。 */
+  tokenTtlMs?: number;
+  /** HMAC 密钥；缺省随机生成（进程内使用）。 */
+  secret?: Uint8Array | string;
+}
