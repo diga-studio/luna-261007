@@ -1,0 +1,13 @@
+{
+  "name": "nodeforge-gray-template-store",
+  "version": "1.0.0",
+  "private": true,
+  "description": "NodeForge gray-release template version store",
+  "type": "module",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.ts"
+  }
+}
