@@ -1,0 +1,19 @@
+{
+  "name": "sensitive-word-review",
+  "version": "0.1.0",
+  "private": true,
+  "description": "敏感词审核库：SQLite 词表 + Unicode 感知匹配",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json && tsc -p tsconfig.test.json",
+    "test": "npm run build && node --test \"dist-test/test/*.test.js\""
+  },
+  "devDependencies": {
+    "typescript": "5.8.2",
+    "@types/node": "24.12.2"
+  },
+  "engines": {
+    "node": ">=22.5"
+  }
+}
