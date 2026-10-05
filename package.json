@@ -1,0 +1,19 @@
+{
+  "name": "purgewave",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Undoable file purge module with SQLite-backed job records",
+  "type": "module",
+  "main": "dist/index.js",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test \"dist/test/*.test.js\""
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.6.0"
+  }
+}
