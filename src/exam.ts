@@ -1,0 +1,95 @@
+import type { ExamDefinition } from "./types.js";
+
+export const EXAM: ExamDefinition = {
+  examId: "fixed-exam-1",
+  title: "Fixed Assessment",
+  durationMs: 60 * 60 * 1000,
+  passRatio: { numerator: 7, denominator: 10 },
+  questions: [
+    {
+      id: "q1",
+      type: "single",
+      prompt: "Which data structure provides FIFO ordering?",
+      options: ["stack", "queue", "tree", "graph"],
+      correct: ["queue"],
+    },
+    {
+      id: "q2",
+      type: "single",
+      prompt: "Which HTTP method is idempotent and used to replace a resource?",
+      options: ["POST", "PATCH", "PUT", "OPTIONS"],
+      correct: ["PUT"],
+    },
+    {
+      id: "q3",
+      type: "multiple",
+      prompt: "Which of the following are primitive types in TypeScript?",
+      options: ["string", "number", "object", "boolean"],
+      correct: ["string", "number", "boolean"],
+    },
+    {
+      id: "q4",
+      type: "single",
+      prompt: "What is the time complexity of binary search on a sorted array?",
+      options: ["O(n)", "O(log n)", "O(n log n)", "O(1)"],
+      correct: ["O(log n)"],
+    },
+    {
+      id: "q5",
+      type: "multiple",
+      prompt: "Which statements about ACID transactions are true?",
+      options: [
+        "atomicity",
+        "consistency",
+        "eventual durability only",
+        "isolation",
+      ],
+      correct: ["atomicity", "consistency", "isolation"],
+    },
+    {
+      id: "q6",
+      type: "single",
+      prompt: "Which SQL clause filters rows before grouping?",
+      options: ["HAVING", "WHERE", "GROUP BY", "ORDER BY"],
+      correct: ["WHERE"],
+    },
+    {
+      id: "q7",
+      type: "multiple",
+      prompt: "Which of the following are valid JSON value types?",
+      options: ["string", "undefined", "null", "number"],
+      correct: ["string", "null", "number"],
+    },
+    {
+      id: "q8",
+      type: "single",
+      prompt: "Which header makes an HTTP response uncacheable by shared caches?",
+      options: [
+        "Cache-Control: no-store",
+        "ETag",
+        "Last-Modified",
+        "Vary",
+      ],
+      correct: ["Cache-Control: no-store"],
+    },
+    {
+      id: "q9",
+      type: "multiple",
+      prompt: "Which practices improve password storage security?",
+      options: [
+        "salted hashing",
+        "adaptive hash functions",
+        "reversible encryption",
+        "plaintext storage",
+      ],
+      correct: ["salted hashing", "adaptive hash functions"],
+    },
+    {
+      id: "q10",
+      type: "single",
+      prompt: "In Git, which command replays commits onto a new base?",
+      options: ["merge", "rebase", "stash", "tag"],
+      correct: ["rebase"],
+    },
+  ],
+};
