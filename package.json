@@ -1,0 +1,16 @@
+{
+  "name": "crew-dispatch-recommender",
+  "version": "0.1.0",
+  "private": true,
+  "description": "班组派工推荐库：在内存名册上为工单推荐资格完整、总代价最低的班组",
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0"
+  }
+}
