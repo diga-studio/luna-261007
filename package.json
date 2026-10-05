@@ -1,0 +1,19 @@
+{
+  "name": "branchforge-merge",
+  "version": "0.1.0",
+  "private": true,
+  "description": "BranchForge three-way text merge library (in-memory, single file)",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "files": [
+    "dist/src"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "tsc && node --test dist/test/*.test.js"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.5.0"
+  }
+}
