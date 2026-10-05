@@ -1,0 +1,16 @@
+{
+  "name": "retention-allocator",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AIA G702/G703 retention allocation across a batch of payment applications",
+  "type": "commonjs",
+  "main": "dist/src/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "tsc -p tsconfig.json && node --test \"dist/test/*.test.js\""
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "@types/node": "^20.0.0"
+  }
+}
