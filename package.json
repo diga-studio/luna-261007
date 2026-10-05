@@ -1,0 +1,16 @@
+{
+  "name": "pixelgrid-csv-import",
+  "version": "0.1.0",
+  "private": true,
+  "description": "PixelGrid CSV 导入判型库：流式解析、采样判型、逐行交付",
+  "type": "module",
+  "main": "dist/src/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "tsc -p tsconfig.json && node --expose-gc --test \"dist/test/*.test.js\""
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.3"
+  }
+}
