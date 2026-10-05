@@ -1,0 +1,16 @@
+{
+  "name": "db-access-review",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Database access grant & periodic review library backed by SQLite",
+  "type": "module",
+  "main": "dist/src/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test dist/test/"
+  },
+  "devDependencies": {
+    "@types/node": "24.19.1",
+    "typescript": "5.9.3"
+  }
+}
