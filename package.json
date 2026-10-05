@@ -1,0 +1,17 @@
+{
+  "name": "contenthub-keyword-review",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "ContentHub keyword moderation library invoked by the content save flow",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@types/node": "^26.0.0",
+    "typescript": "^5.9.0",
+    "vitest": "^4.0.0"
+  }
+}
