@@ -1,0 +1,23 @@
+{
+  "name": "urbansketch-spline-select",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "In-memory spline scene with polygonal region selection (intersect / contain) for UrbanSketch",
+  "main": "dist/src/scene.js",
+  "types": "dist/src/scene.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/src/scene.d.ts",
+      "default": "./dist/src/scene.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test \"dist/test/*.test.js\""
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "typescript": "^5.5.0"
+  }
+}
