@@ -1,0 +1,20 @@
+{
+  "name": "storeforge-billing",
+  "version": "0.1.0",
+  "private": true,
+  "description": "StoreForge usage billing library: resource changes in, monthly ledger out.",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "tsc -p tsconfig.json && node --test \"dist/test/**/*.test.js\""
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.10.1"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^24.19.1",
+    "typescript": "^5.9.3"
+  }
+}
