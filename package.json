@@ -1,0 +1,14 @@
+{
+  "name": "syscall-baseline",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Process-level syscall sequence baseline library",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "tsc -p tsconfig.json && node --test dist/tests/*.test.js"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.5.0"
+  }
+}
