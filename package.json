@@ -1,0 +1,19 @@
+{
+  "name": "rolling-patch-release",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Rolling patch release library driven by an upper-layer scheduler, persisted in SQLite",
+  "type": "module",
+  "main": "dist/index.js",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test \"dist/test/*.test.js\""
+  },
+  "devDependencies": {
+    "@types/node": "^24.12.2",
+    "typescript": "^5.9.3"
+  }
+}
