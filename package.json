@@ -1,0 +1,19 @@
+{
+  "name": "contract-performance-score",
+  "version": "1.0.0",
+  "private": true,
+  "description": "合同履约计分库：规则登记、期次处理结果登记/撤销、区间履约汇总，SQLite 持久化",
+  "type": "commonjs",
+  "main": "dist/src/index.js",
+  "engines": {
+    "node": ">=23.4.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node scripts/test.js"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.5.0"
+  }
+}
