@@ -1,0 +1,15 @@
+{
+  "name": "cve-matcher",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Offline CVE matching library for endpoint software inventories",
+  "type": "module",
+  "main": "dist/src/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "tsc -p tsconfig.json && node --test \"dist/test/**/*.test.js\""
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
