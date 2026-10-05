@@ -1,0 +1,14 @@
+{
+  "name": "marketing-automation",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "In-process marketing automation send library with consent epochs, retry and timeout handling",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "test": "node --test \"test/**/*.test.ts\"",
+    "check": "node --check src/index.ts && node --check test/helpers.ts"
+  }
+}
