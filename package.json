@@ -1,0 +1,15 @@
+{
+  "name": "firmware-elf-validator",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "ELF memory-map validation for firmware receive (ELF32 LE, ET_EXEC, EM_ARM)",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "tsc -p tsconfig.json && node --test \"dist/test/*.test.js\""
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.5.0"
+  }
+}
