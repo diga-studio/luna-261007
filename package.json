@@ -1,0 +1,14 @@
+{
+  "name": "journey-engine",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Dependency-aware completion state engine for onboarding journeys",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test \"dist/test/*.test.js\""
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
