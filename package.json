@@ -1,0 +1,16 @@
+{
+  "name": "prototype-playback",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Deterministic prototype playback engine (library only, no UI/IO layer)",
+  "type": "commonjs",
+  "main": "dist/src/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test dist/test/*.test.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4",
+    "@types/node": "^20.19.0"
+  }
+}
