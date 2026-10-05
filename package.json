@@ -1,0 +1,15 @@
+{
+  "name": "ddos-rule-adjudicator",
+  "version": "0.1.0",
+  "private": true,
+  "description": "In-memory DDoS protection rule adjudication library",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && NODE_OPTIONS=--expose-gc node --test dist/test/*.test.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "@types/node": "^20.0.0"
+  }
+}
