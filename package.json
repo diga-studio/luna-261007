@@ -1,0 +1,17 @@
+{
+  "name": "docx-intake-validator",
+  "version": "0.1.0",
+  "private": true,
+  "description": "DOCX 入库验真库：校验本地文件是否为可入库的 OOXML Transitional DOCX",
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@types/node": "22.19.21",
+    "typescript": "5.7.3",
+    "vitest": "2.1.9"
+  }
+}
