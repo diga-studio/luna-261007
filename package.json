@@ -1,0 +1,16 @@
+{
+  "name": "prototype-playback",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Deterministic prototype playback engine (headless, JSON-defined projects, in-memory sessions)",
+  "type": "module",
+  "main": "dist/src/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test dist/test/*.test.js"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.4.0"
+  }
+}
