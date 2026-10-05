@@ -1,0 +1,24 @@
+{
+  "name": "dns-zone-diff",
+  "version": "0.1.0",
+  "private": true,
+  "description": "DNS snapshot normalization and diffing for zone master files",
+  "type": "module",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.ts",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "main": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0"
+  },
+  "files": [
+    "src"
+  ]
+}
