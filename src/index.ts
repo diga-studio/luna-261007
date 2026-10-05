@@ -1,0 +1,1 @@
+export { stripGps } from './strip';

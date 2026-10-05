@@ -1,0 +1,16 @@
+{
+  "name": "jpeg-exif-gps-strip",
+  "version": "1.0.0",
+  "description": "Strip GPS EXIF data from JPEG bytes in memory without modifying the input",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && tsc -p tsconfig.test.json && node --test \"dist-test/test/*.test.js\""
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "typescript": "^5.5.0"
+  }
+}
