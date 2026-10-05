@@ -1,0 +1,14 @@
+{
+  "name": "endpoint-reconciler",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Endpoint inventory import identity reconciliation (suggestions only, no mutation)",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "tsc -p tsconfig.json && node --test dist/test/*.test.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "@types/node": "^26.6.2"
+  }
+}
