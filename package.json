@@ -1,0 +1,19 @@
+{
+  "name": "dual-track-review",
+  "version": "0.1.0",
+  "private": true,
+  "description": "贷款双轨保护核查库：判定止赎推进是否发生在完整减损申请待处理期间",
+  "type": "module",
+  "main": "dist/index.js",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "test": "tsc -p tsconfig.json && node --test \"build/test/*.test.js\""
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.6.0"
+  }
+}
