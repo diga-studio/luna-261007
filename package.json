@@ -1,0 +1,13 @@
+{
+  "name": "reservation-engine",
+  "version": "1.0.0",
+  "private": true,
+  "description": "批发订单缺货自动回填组件 ReservationEngine",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test test/*.test.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0"
+  }
+}
