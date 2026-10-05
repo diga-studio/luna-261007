@@ -1,0 +1,14 @@
+{
+  "name": "forgelink-window-aggregator",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ForgeLink single-pipeline event-time window aggregator (realtime + backfill)",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test dist/test/*.test.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0"
+  }
+}
