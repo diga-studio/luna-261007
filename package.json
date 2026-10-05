@@ -1,0 +1,18 @@
+{
+  "name": "reward-redemption",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Reward redemption settlement library (TypeScript + SQLite)",
+  "main": "src/index.ts",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "test": "node --test 'test/*.test.ts'",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
