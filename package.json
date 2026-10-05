@@ -1,0 +1,16 @@
+{
+  "name": "retainage-allocator",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AIA progress payment retainage allocation library (G702/G703 batch allocation)",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.5.0"
+  }
+}
