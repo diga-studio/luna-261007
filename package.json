@@ -1,0 +1,19 @@
+{
+  "name": "content-category-stats",
+  "version": "0.1.0",
+  "private": true,
+  "description": "内容库分类覆盖统计库（SQLite 持久化，无接口层）",
+  "type": "commonjs",
+  "main": "dist/src/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test \"dist/test/*.test.js\""
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "24.12.2",
+    "typescript": "5.9.3"
+  }
+}
