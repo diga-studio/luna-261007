@@ -1,0 +1,15 @@
+{
+  "name": "training-material-ingest",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Resumable chunked ingest library for training materials (local files + SQLite metadata)",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --disable-warning=ExperimentalWarning --test \"build/test/*.test.js\""
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.5.0"
+  }
+}
