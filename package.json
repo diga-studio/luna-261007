@@ -1,0 +1,14 @@
+{
+  "name": "image-batch-ledger",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Persistent ledger for image generation batches with dedup and failure replay",
+  "type": "module",
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "scripts": {
+    "build": "node --check src/index.ts && node --check test/ledger.test.ts",
+    "test": "node --test"
+  }
+}
