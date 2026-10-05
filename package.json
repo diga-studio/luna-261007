@@ -1,0 +1,16 @@
+{
+  "name": "journeypulse-attribution",
+  "version": "0.1.0",
+  "private": true,
+  "description": "JourneyPulse ordered journey attribution library",
+  "main": "build/src/index.js",
+  "types": "build/src/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "tsc && node --test \"build/test/*.test.js\""
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.5.0"
+  }
+}
