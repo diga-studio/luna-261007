@@ -1,0 +1,28 @@
+{
+  "name": "forgekit-approval",
+  "version": "0.1.0",
+  "description": "ForgeKit 本地审批流库，持久状态存入 SQLite，由上层业务直接调用",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "npm run typecheck && node --test"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
