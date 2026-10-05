@@ -1,0 +1,19 @@
+{
+  "name": "image-batch-ledger",
+  "version": "1.0.0",
+  "description": "Persistent ledger for image generation batches with dedup and failure replay",
+  "license": "MIT",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --no-warnings --test \"dist/test/*.test.js\""
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0"
+  },
+  "main": "dist/src/ledger.js",
+  "types": "dist/src/ledger.d.ts",
+  "engines": {
+    "node": ">=22.5.0"
+  }
+}
