@@ -1,0 +1,15 @@
+{
+  "name": "nap-consistency",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Store NAP consistency judgment library",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test \"dist/test/**/*.test.js\""
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0"
+  }
+}

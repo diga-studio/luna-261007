@@ -1,0 +1,4 @@
+node_modules/
+dist/
+.npm-logs/
+.npm-cache/
