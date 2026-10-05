@@ -1,0 +1,17 @@
+{
+  "name": "fulfillment-reservation",
+  "version": "0.1.0",
+  "private": true,
+  "description": "履约预约名额模块：班次名额预约、改约、取件确认、到期清理（SQLite 持久化）",
+  "type": "module",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test dist/test/*.test.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "@types/node": "^24.0.0"
+  }
+}
