@@ -1,0 +1,20 @@
+{
+  "name": "contract-compliance-scorer",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Contract履约计分库：规则登记、期次处理结果登记/撤销、区间履约汇总，SQLite 持久化",
+  "type": "module",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && NODE_OPTIONS=--expose-gc node --test \"dist/test/**/*.test.js\""
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.5.0"
+  }
+}
