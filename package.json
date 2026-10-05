@@ -1,0 +1,20 @@
+{
+  "name": "forgekit-approval",
+  "version": "0.1.0",
+  "private": true,
+  "description": "ForgeKit local approval flow library with SQLite persistence",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "tsc -p tsconfig.test.json && node --test \"dist-test/test/*.test.js\"",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.6.0"
+  },
+  "engines": {
+    "node": ">=23.4"
+  }
+}
