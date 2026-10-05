@@ -1,0 +1,14 @@
+{
+  "name": "declining-balance-depreciation",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Batch query library for declining-balance depreciation of fixed assets",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test \"dist/test/*.test.js\""
+  },
+  "devDependencies": {
+    "typescript": "5.5.4"
+  }
+}
