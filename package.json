@@ -1,0 +1,16 @@
+{
+  "name": "floodgate-geo-deny",
+  "version": "0.1.0",
+  "description": "FloodGate geographic CIDR deny-policy compilation library",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --expose-gc --test test/*.test.ts"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3"
+  }
+}
