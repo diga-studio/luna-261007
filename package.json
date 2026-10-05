@@ -1,0 +1,16 @@
+{
+  "name": "workforge-payroll",
+  "version": "0.1.0",
+  "private": true,
+  "description": "WorkForge multi-rate overtime pay-run calculation library",
+  "type": "module",
+  "main": "dist/src/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "tsc -p tsconfig.json && node --test \"dist/tests/**/*.test.js\""
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "typescript": "^5.5.0"
+  }
+}
